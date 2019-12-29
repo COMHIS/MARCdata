@@ -7,6 +7,7 @@ void MARCdata::csvOutput(const std::string filename){
 	for (auto& book : books){
 		table << book["041"]['a'] << "|";
 		table << book["041"]['h'] << "|";
+		table << book["041"]['k'] << "|";		
 		table << book["100"]['a'] << "|";
 		table << book["100"]['d'] << "|";
 		table << book["240"]['a'] << "|";
@@ -27,6 +28,7 @@ void MARCdata::csvOutput(const std::string filename){
 		table << book["502"]['d'] << "|";
 		table << book["510"]['a'] << "|";
 		table << book["510"]['c'] << "|";
+		table << book["546"]['a'] << "|";		
 		table << book["650"]['a'] << "|";
 		table << book["651"]['a'] << "|";
 		table << book["710"]['a'] << "|";

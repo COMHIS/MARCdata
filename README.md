@@ -18,7 +18,12 @@ Requires standard library support for the following C++11 extensions:
 
 ## Usage
 
-Input files should be placed in folder 'data'. Output goes there as well.
+Input files (XML) should be placed in folder 'data'. Output goes there as well.
+
+For instance for Fennica, see ~/data/fennica/raw/fennica_*.xml.gz
+
+Note that the XML files should be uncompressed before parsing!
+
 
 ### ESTC
 
