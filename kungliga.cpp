@@ -3,7 +3,7 @@
 void MARCdata::csvOutput(const std::string filename){
 	constructSubfields();
 	ogzstream table(filename.c_str());
-	table << "008lang|100a|100d|110a|240a|245a|245b|245c|260a|260b|260c|260e|260f|300a|300b|300c|300e|310a|362a|440a|440v|";
+	table << "008lang|041a|100a|100d|110a|240a|245a|245b|245c|260a|260b|260c|260e|260f|300a|300b|300c|300e|310a|362a|440a|440v|";
 	table << "500a|502a|502c|502d|510a|510c|650a|650x|650y|650z|651a|700a|700d|710a|720a|740a|772c|772d|772t|785t|";
 	table << "852a|852j|852z|866x|900a|900d|900u|976a|976b\n";
 	for (auto& book : books){
@@ -11,6 +11,7 @@ void MARCdata::csvOutput(const std::string filename){
 			table << book["008"]['#'].substr(35,3);	
 		}
 		table << "|";
+		table << book["041"]['a'] << "|";		
 		table << book["100"]['a'] << "|";
 		table << book["100"]['d'] << "|";
 		table << book["110"]['a'] << "|";
