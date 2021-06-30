@@ -3,9 +3,6 @@
 
 # MARCdata
 
-THIS IS A LEGACY REPO. FOR THE CURRENT CSV CONVERSION PIPELINE, SEE
-https://github.com/COMHIS/estc-raw-csv-prepicker
-
 Writes selected parts of a [MARC XML](http://www.loc.gov/standards/marcxml/) bibliographic data file into a .csv.gz file.
 
 ## Preliminaries
@@ -32,6 +29,11 @@ Note that the XML files should be uncompressed before parsing!
 
 
 ### ESTC
+
+FOR THE CURRENT CSV CONVERSION PIPELINE, SEE
+[https://github.com/COMHIS/estc-raw-csv-prepicker](https://github.com/COMHIS/estc-raw-csv-prepicker).
+
+For the old versions, use:
 
 	make estc
 	./estc
